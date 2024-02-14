@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Float</title>
+    <style>
+        div{
+            display: inline-block;
+            width: 40%;
+        }
+
+        p{
+            font-size: 2em;
+        }
+
+        .cat{
+            background-color: aquamarine;
+            float: left;
+        }
+
+        .dog{
+            background-color: coral;
+            float: right;
+        }
+
+        footer{
+            text-align: center;
+            background-color: blueviolet;
+            clear:both
+        }
+        .cat > img{
+            float: left;
+        }
+        .dog>img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cat">
+        <h2>CatCSS</h2>
+        <img src="./catCSS.jpg" alt="image of cat" />
+        <p class="first-paragraph">Nap all day cat dog hates mouse eat string barf pillow no baths hate everything but kitty poochy. sleep on keyboard toy mouse sqeak roll over. Mesmerizing birds. Poop on grasses licks paws destroy couch intently sniff hand. the dog smells bad gnaw.</p>
+    </div>
+    <div class="dog">
+        <h2>DogCSS</h2>
+        <img src="./dogCSS.jpg" alt="image of a dog" />
+        <p class="second-paragraph">Hecking good boys and girrls long woofer big ol wow very biscuit long woofer heck what a nice floof, long doggo noodle horse vvv very taste wow. very taste wow many pats aqua doggo he made many woofs pupperino, puggo doing me a frighten.</p>
+    </div>
+    <footer>Copyrright. This is a footer</footer>
+</body>
+</html>
