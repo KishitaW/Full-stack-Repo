@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Media Queries</title>
+    <!--
+        TODO: Change the background color for each device 
+        [lightsalmon] mobile devices: 319px-480px
+        [powderblue] iPads and tablets: 481px-1200px 
+        [limegreen] laptops: 1201px-1600px
+        [seagreen] desktops: 1601px and more
+    -->
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+
+        @media (max-width: 480px){
+            body{
+                background-color: lightsalmon;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 1200px){
+            body{
+                background-color: powderblue;
+            }
+        }
+
+        @media (min-width: 1201px) and (max-width: 1600px){
+            body{
+                background-color: limegreen;
+            }
+        }
+
+        @media (min-width: 1601px){
+            body{
+                background-color: seagreen;
+            }
+        }
+    </style>
+</head>
+<body>
+
+</body>
+</html>
