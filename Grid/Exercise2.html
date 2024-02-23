@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Placement</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .container{
+            height: 100vh;
+            display: grid;
+            gap: 3rem;
+            grid-template-columns: 1fr 1fr 1.5fr;
+            grid-template-rows: 1fr 1fr;
+
+        }
+
+        .item{
+            font-size: 5rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cowboy{
+            background-color: #00B9FF;
+            grid-column: span 2;
+        }
+        .rocket{
+            background-color: #03989E;
+            order:1;
+            grid-column: span 2;
+            /* grid-column-end: 3;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 3; */
+
+            /* grid-area: 2/1/3/3;
+            grid-area: row-start/column-start/row-end/column-end */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item cowboy">&#x1f920;</div>
+        <div class="item rocket">&#x1f680;</div>
+        <div class="item book">&#x1f4d6;</div>
+    </div>
+</body>
+</html>
